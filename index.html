@@ -133,6 +133,7 @@
   .touch-controls{ display:none; width:100%; max-width:360px; margin-top:14px; user-select:none; -webkit-user-select:none; }
   .gb-shell{
     display:flex; align-items:center; justify-content:space-between;
+    gap:14px;
     background:linear-gradient(180deg, var(--panel-2), var(--panel));
     border:1px solid var(--line); border-radius:20px;
     padding:18px 22px; position:relative;
@@ -163,7 +164,7 @@
   .dpad-down{ grid-column:2; grid-row:3; border-radius:0 0 6px 6px; }
   .dpad-btn, .dpad-center{ margin:-1px 0 0 -1px; }
 
-  .ab-cluster{ display:flex; flex-direction:column; gap:10px; flex:0 0 auto; transform:rotate(-18deg); }
+  .ab-cluster{ display:flex; flex-direction:column; gap:14px; flex:0 0 auto; transform:rotate(-18deg); }
   .ab-btn{
     width:52px; height:52px; border-radius:50%; font-size:17px;
     box-shadow:0 3px 0 rgba(0,0,0,0.35);
@@ -172,7 +173,7 @@
   .ab-cluster .ab-a{ align-self:flex-end; }
 
   .pause-btn{
-    position:absolute; top:8px; right:14px; width:auto; padding:5px 12px;
+    flex:0 0 auto; padding:6px 14px;
     border-radius:20px; font-size:10px; letter-spacing:1px;
   }
 
@@ -410,11 +411,11 @@
             <div class="tbtn dpad-btn dpad-right" data-dkey="dpadRight">▶</div>
             <div class="tbtn dpad-btn dpad-down" data-dkey="dpadDown">▼</div>
           </div>
+          <div class="tbtn pause-btn" id="tPause">PAUSE</div>
           <div class="ab-cluster">
             <div class="tbtn ab-btn ab-b" data-dkey="btnB">B</div>
             <div class="tbtn ab-btn ab-a" data-dkey="btnA">A</div>
           </div>
-          <div class="tbtn pause-btn" id="tPause">PAUSE</div>
         </div>
       </div>
     </div>
